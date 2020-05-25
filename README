@@ -1,0 +1,15 @@
+This folder is for testing and prototyping Graphical RNN deep learning models for time series data.
+
+To properly use create:
+data_collection/data/
+figs/
+backtest/output/
+
+Add your quandl and tiingo keys to the keychain.
+
+Pull necassary data and interface training via the Training_API class.
+The appropriate callbacks from the training API will perform automated backtests.
+
+
+Once a model is selected, fill out a neassary config for the REST API and push to production.
+

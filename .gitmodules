@@ -1,0 +1,3 @@
+[submodule "pyalgotrade"]
+	path = pyalgotrade
+	url = git@gitlab.com:rednirgskizzif/pyalgotrade.git

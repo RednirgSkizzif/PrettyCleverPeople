@@ -1,0 +1,5 @@
+models/*
+__pycache__
+data
+.ipynb_checkpoints
+2020*beta*

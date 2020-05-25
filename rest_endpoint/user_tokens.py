@@ -1,0 +1,3 @@
+users = {'D':'2ff74b8593eb43a3cb140c26963e4b684fdad1699aa578968f73eff1c8b533c0',
+         'G':'b7900f39bb0a3951adfef7df6d198581f2a6e7b260c1b6df0861ac8a18d77965'}
+         
