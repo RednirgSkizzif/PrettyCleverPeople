@@ -6,66 +6,6 @@ import pyalgotrade
 import numpy as np
 import pdb
 
-# class MyStrategy(strategy.BacktestingStrategy):
-#     def __init__(self, feed, instrument):
-#         super(MyStrategy, self).__init__(feed)
-#         self.__instrument = instrument
-#         self.__rnn_std = 0
-    
-#     def onBars(self, bars):
-#         bar = bars[self.__instrument]
-        
-#         owned_shares = self.getBroker().getShares(self.__instrument)
-#         cash = self.getBroker().getCash()
-
-#         equity = owned_shares*bar.getClose()
-#         current_price = bars[self.__instrument].getPrice()
-
-        
-#         # print(bar.getDateTime())
-#         # print("cash = " + str(cash))
-#         # print("shares = " + str(owned_shares))
-#         # print("equity = " + str(equity))
-#         # print("cash+equity = " + str(equity+cash))
-#         # print("---------------------------")
-
-#         score = bars["rnn_score"].getClose() 
-
-          
-#         if score > self.__rnn_std and owned_shares > 0 :
-#             pass
-        
-#         elif score > self.__rnn_std and owned_shares <= 0:
-            
-#             #We want to turn 95% of our cash to shares.
-#             quantity = int( round( ( ((cash) * 0.95)/ current_price) - 0.5 ) )
-#             print("BUY "+str(quantity) +" shares "+self.__instrument +" @ "+\
-#              str(bar.getClose())+" for total of : "+str(current_price*quantity))
-#             print(bar.getDateTime())
-#             print("cash = " + str(cash))
-#             print("shares = " + str(owned_shares))
-#             print("equity = " + str(equity))
-#             print("cash+equity = " + str(equity+cash))
-#             print("---------------------------")
-
-#             self.enterLong(self.__instrument, quantity)
-
-#         elif score < self.__rnn_std and owned_shares < 0 :
-#             pass
-        
-#         elif score < self.__rnn_std and owned_shares >= 0:            
-#             #We want to sell shares equal to the cash reserves of our account. 
-#             quantity = int( round( ( ( (cash+equity) * 0.95)/ current_price) - 0.5 ) ) + owned_shares
-            
-#             print("SELL "+str(quantity) +" shares "+self.__instrument +" @ "+\
-#              str(bar.getClose())+" for total of : "+str(current_price*quantity))
-#             print(bar.getDateTime())
-#             print("cash = " + str(cash))
-#             print("shares = " + str(owned_shares))
-#             print("equity = " + str(equity))
-#             print("cash+equity = " + str(equity+cash))
-#             print("---------------------------")
-#             self.enterShort(self.__instrument, quantity)
 
 
 class MyStrategy(strategy.BacktestingStrategy):
